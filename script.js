@@ -143,13 +143,7 @@ canvas.addEventListener("mousedown", (event) => {
 // --- Restart Button ---
 const restartButton = document.createElement("button");
 restartButton.textContent = "Restart";
-restartButton.style.position = "absolute";
-restartButton.style.left = "50%";
-restartButton.style.top = "55%";
-restartButton.style.transform = "translate(-50%, -50%)";
-restartButton.style.fontSize = "24px";
-restartButton.style.padding = "10px 20px";
-restartButton.style.display = "none";
+restartButton.classList.add("restart-button");
 document.body.appendChild(restartButton);
 restartButton.addEventListener("click", resetGame);
 
