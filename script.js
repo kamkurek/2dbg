@@ -2,12 +2,12 @@ const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 document.body.appendChild(canvas);
 
-canvas.width = 800;
-canvas.height = 600;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 document.body.style.backgroundColor = "#d0f0c0";
 
 // --- World & Camera ---
-const world = { width: 2000, height: 2000 };
+const world = { width: window.innerWidth, height: window.innerHeight };
 let camera = { x: 0, y: 0, width: canvas.width, height: canvas.height };
 
 // --- Game State ---
